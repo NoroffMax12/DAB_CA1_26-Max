@@ -1,0 +1,15 @@
+[
+  "INSERT INTO animals (name, speciesId, birthday, sizeId) VALUES ('Coco', 1, '2020-02-12', 1)",
+  "INSERT INTO animals (name, speciesId, birthday, sizeId) VALUES ('Ted', 2, '2021-02-12', 1)",
+  "INSERT INTO animals (name, speciesId, birthday, sizeId) VALUES ('Coco', 3, '2020-02-12', 2)",
+  "INSERT INTO animals (name, speciesId, birthday, sizeId) VALUES ('Everest', 4, '2019-02-12', 1)",
+  "INSERT INTO animals (name, speciesId, birthday, sizeId) VALUES ('Rocko', 5, '2020-02-12', 2)",
+  "INSERT INTO animals (name, speciesId, birthday, sizeId) VALUES ('Goldy', 6, '2023-02-12', 1)",
+  "INSERT INTO animals (name, speciesId, birthday, sizeId) VALUES ('Lizzy', 7, '2020-02-12', 2)",
+  "INSERT INTO animals (name, speciesId, birthday, sizeId) VALUES ('Goga', 8, '2018-02-12', 3)",
+  "INSERT INTO animals (name, speciesId, birthday, sizeId) VALUES ('Tweet Tweet', 9, '2020-02-12', 3)",
+  "INSERT INTO animals (name, speciesId, birthday, sizeId) VALUES ('Toothless', 10, '2017-02-12', 2)",
+  "INSERT INTO animals (name, speciesId, birthday, sizeId) VALUES ('Sophie', 1, '2020-02-12', 1)",
+  "INSERT INTO animals (name, speciesId, birthday, sizeId) VALUES ('Teddy', 2, '2021-02-12', 1)",
+  "INSERT INTO animals (name, speciesId, birthday, sizeId) VALUES ('Roger', 9, '2020-02-18', 3)"
+]

@@ -1,0 +1,7 @@
+[
+  "INSERT INTO temperaments (name) VALUES ('rolig')",
+  "INSERT INTO temperaments (name) VALUES ('skremt')",
+  "INSERT INTO temperaments (name) VALUES ('energisk')",
+  "INSERT INTO temperaments (name) VALUES ('glad')",
+  "INSERT INTO temperaments (name) VALUES ('lat')"
+]

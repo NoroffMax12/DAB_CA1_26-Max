@@ -1,0 +1,6 @@
+[
+  "INSERT INTO sizes (name) VALUES ('liten')",
+  "INSERT INTO sizes (name) VALUES ('medium')",
+  "INSERT INTO sizes (name) VALUES ('stor')"
+]
+

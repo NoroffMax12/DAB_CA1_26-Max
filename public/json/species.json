@@ -1,0 +1,12 @@
+[
+  "INSERT INTO species (name) VALUES ('Dverghamstergnøtt')",
+  "INSERT INTO species (name) VALUES ('Teddy bear-hamster')",
+  "INSERT INTO species (name) VALUES ('Jack-Russell')",
+  "INSERT INTO species (name) VALUES ('Undulat')",
+  "INSERT INTO species (name) VALUES ('Skilpadde')",
+  "INSERT INTO species (name) VALUES ('Gullfisk')",
+  "INSERT INTO species (name) VALUES ('Øgle')",
+  "INSERT INTO species (name) VALUES ('Skjegget Dragon')",
+  "INSERT INTO species (name) VALUES ('Papegøye')",
+  "INSERT INTO species (name) VALUES ('Maislange')"
+]
