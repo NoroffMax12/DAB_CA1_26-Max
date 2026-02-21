@@ -1,7 +1,7 @@
 [
-  "INSERT INTO temperaments (name) VALUES ('rolig')",
-  "INSERT INTO temperaments (name) VALUES ('skremt')",
-  "INSERT INTO temperaments (name) VALUES ('energisk')",
-  "INSERT INTO temperaments (name) VALUES ('glad')",
-  "INSERT INTO temperaments (name) VALUES ('lat')"
+  "INSERT INTO temperaments (name) VALUES ('calm')",
+  "INSERT INTO temperaments (name) VALUES ('scared')",
+  "INSERT INTO temperaments (name) VALUES ('energetic')",
+  "INSERT INTO temperaments (name) VALUES ('happy')",
+  "INSERT INTO temperaments (name) VALUES ('lazy')"
 ]

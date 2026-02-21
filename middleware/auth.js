@@ -6,7 +6,7 @@ function isAuthenticated(req, res, next) {
 }
 
 function isMember(req, res, next) {
-  if (req.isAuthenticated() && req.user.role === 'medlem') {
+  if (req.isAuthenticated() && req.user.role === 'member') {
     return next();
   }
   res.status(403).send('Access denied');

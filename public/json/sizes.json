@@ -1,6 +1,5 @@
 [
-  "INSERT INTO sizes (name) VALUES ('liten')",
-  "INSERT INTO sizes (name) VALUES ('medium')",
-  "INSERT INTO sizes (name) VALUES ('stor')"
+  "INSERT INTO sizes (name) VALUES ('Small')",
+  "INSERT INTO sizes (name) VALUES ('Medium')",
+  "INSERT INTO sizes (name) VALUES ('Large')"
 ]
-

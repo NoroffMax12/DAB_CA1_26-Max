@@ -1,12 +1,12 @@
 [
-  "INSERT INTO species (name) VALUES ('Dverghamstergnøtt')",
-  "INSERT INTO species (name) VALUES ('Teddy bear-hamster')",
-  "INSERT INTO species (name) VALUES ('Jack-Russell')",
-  "INSERT INTO species (name) VALUES ('Undulat')",
-  "INSERT INTO species (name) VALUES ('Skilpadde')",
-  "INSERT INTO species (name) VALUES ('Gullfisk')",
-  "INSERT INTO species (name) VALUES ('Øgle')",
-  "INSERT INTO species (name) VALUES ('Skjegget Dragon')",
-  "INSERT INTO species (name) VALUES ('Papegøye')",
-  "INSERT INTO species (name) VALUES ('Maislange')"
+  "INSERT INTO species (name) VALUES ('Dwarf Hamster')",
+  "INSERT INTO species (name) VALUES ('Teddy Bear Hamster')",
+  "INSERT INTO species (name) VALUES ('Jack Russell')",
+  "INSERT INTO species (name) VALUES ('Budgie')",
+  "INSERT INTO species (name) VALUES ('Turtle')",
+  "INSERT INTO species (name) VALUES ('Goldfish')",
+  "INSERT INTO species (name) VALUES ('Lizard')",
+  "INSERT INTO species (name) VALUES ('Bearded Dragon')",
+  "INSERT INTO species (name) VALUES ('Parrot')",
+  "INSERT INTO species (name) VALUES ('Corn Snake')"
 ]

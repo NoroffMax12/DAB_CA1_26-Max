@@ -1,5 +1,5 @@
 [
-  "INSERT INTO users (fullName, username, password, role) VALUES ('Systemadministrator', 'Admin', 'admin1234', 'admin')",
-  "INSERT INTO users (fullName, username, password, role) VALUES ('Bruker', 'User', 'user1234', 'medlem')",
-  "INSERT INTO users (fullName, username, password, role) VALUES ('Bruker2', 'User2', 'User1234', 'medlem')"
+  "INSERT INTO users (fullName, username, password, role) VALUES ('System Administrator', 'Admin', 'admin1234', 'admin')",
+  "INSERT INTO users (fullName, username, password, role) VALUES ('User', 'User', 'user1234', 'member')",
+  "INSERT INTO users (fullName, username, password, role) VALUES ('User2', 'User2', 'User1234', 'member')"
 ]
