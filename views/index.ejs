@@ -10,8 +10,6 @@
 
 <body>
   <div class="container-fluid mt-5 text-center">
-
-    <%- include('./partials/navbar.ejs', {user: user}) %>
       <h1>
         DAB - Adopt an Animal Course Assignment
       </h1>
@@ -23,6 +21,8 @@
         <button class="btn-lg btn-info" onclick="populateDatabase()">Populate Database</button>
       </div>
   </div>
+  <!-- load common client-side helpers -->
+  <script src="/js/common.js"></script>
 </body>
 
 </html>
