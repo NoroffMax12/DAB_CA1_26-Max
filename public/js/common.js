@@ -106,21 +106,57 @@ function allAnimals() {
   location.reload();
 }
 
-// Update species (admin only)
-function updateSpecies(id) {
-  const newSpecies = prompt("Update species name:");
-  if (!newSpecies) return;
+// Update species:
+async function updateSpecies(id, currentName) {
+    const newName = prompt('Update species name: ', currentName);
+    if (!newName || newName === currentName) return;
+    
+    try {
+      const res = await fetch(`/species/update/${id}`, {
+        method: 'POST',
+        headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+        body: `name=${encodeURIComponent(newName)}`
+      });
+
+      if (res.ok) {
+        alert('Species updated successfully');
+        location.reload();
+        } else { 
+        alert('Error updating species:');
+      }
+    } catch (err) {
+      alert('Error updating species: ' + err.message);
+    }
+}
+
+//Delete species:
+async function deleteSpecies(id) {
+  if (!confirm('Are you sure?')) return;
   
-  // TODO: Implement species update
-  alert('Species update not yet implemented');
+  try {
+    const res = await fetch(`/species/delete/${id}`, { method: 'POST' });
+    const contentType = res.headers.get('content-type');
+    
+    if (!contentType || !contentType.includes('application/json')) {
+      alert('Server sent invalid response format');
+      console.error('Expected JSON, got:', contentType);
+      return;
+    }
+    
+    const data = await res.json();
+    
+    if (data.success) {
+      alert(data.message);
+      location.reload();
+    } else {
+      alert('Error: ' + data.message);
+    }
+    
+  } catch (err) {
+    alert('Error: ' + err.message);
+  }
 }
-
-// Delete species (admin only)
-function deleteSpecies(id) {
-  // TODO: Implement species delete
-  alert('Species delete not yet implemented');
-}
-
+  
 // Populate database
 async function populateDatabase() {
   try {

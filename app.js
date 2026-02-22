@@ -13,7 +13,7 @@ const {sequelize} = require('./models')
 
 var indexRouter = require('./routes/index.js');
 var animalsRouter = require('./routes/animals');
-var speciesRouter = require('./routes/species');
+var speciesRouter = require('./routes/species.js');
 
 var app = express();
 
