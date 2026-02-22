@@ -31,20 +31,36 @@
             <button class="btn-sm btn-warning" onclick="allAnimals()">All Animals</button>
           </span>
         </div>
+
+        <!--Add new sorting feature-->
         <div class="row px-3 py-1 w-100">
           <span class="col py-1 bg-noroff">Id</span>
-          <span class="col py-1 bg-noroff">Name</span>
-          <span class="col py-1 bg-noroff">Species</span>
+          <span class="col py-1 bg-noroff" data-sort="name" onclick="sortTable('name')" style="cursor: pointer;">
+            Name<span class="sort-arrow"></span>
+          </span>
+          <span class="col py-1 bg-noroff" data-sort="species" onclick="sortTable('species')" style="cursor: pointer;">
+            Species<span class="sort-arrow"></span>
+          </span>
           <span class="col py-1 bg-noroff">Birthday</span>
           <span class="col py-1 bg-noroff">Temperament</span>
-          <span class="col py-1 bg-noroff">Size</span>
-          <span class="col py-1 bg-noroff">Age</span>
+          <span class="col py-1 bg-noroff" data-sort="size" onclick="sortTable('size')" style="cursor: pointer;">
+            Size<span class="sort-arrow"></span>
+          </span>
+          <span class="col py-1 bg-noroff" data-sort="age" onclick="sortTable('age')" style="cursor: pointer;">
+            Age<span class="sort-arrow"></span>
+          </span>
           <span class="col py-1 bg-noroff">Adopted</span>
           <span class="col py-1 bg-noroff">Options</span>
         </div>
-        <% animals.forEach(function(animal) { %>
-          <div class="row px-3 py-1 w-100">
-            <span class="col py-1 bg-light ">
+
+          <div class="animal-container">
+          <% animals.forEach(function(animal) { %>         
+          <div class="row px-3 py-1 w-100 animal-row" 
+              data-name="<%= animal.Name.toLowerCase() %>"
+              data-species="<%= animal.Species.toLowerCase() %>"
+              data-size="<%= animal.Size %>"
+              data-age="<%= animal.Age %>">            
+              <span class="col py-1 bg-light ">
               <%=animal.Id%>
             </span>
             <span class="col py-1 bg-light">
@@ -73,8 +89,9 @@
               <button class="btn-sm btn-danger" onclick="deleteAnimal(<%=animal.Id%>)">Cancel Adoption</button>
             </span>
           </div>
-          <% }); %>
-            <hr>
+         <% }); %>
+          </div>
+          <hr>
 
       </div>
     </div>

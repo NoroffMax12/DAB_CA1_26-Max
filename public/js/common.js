@@ -171,3 +171,59 @@ async function populateDatabase() {
     alert('Error populating database: ' + err.message);
   }
 }
+
+let currentSort = { column: null, ascending: true };
+
+function sortTable(column) {
+  const rows = Array.from(document.querySelectorAll('.animal-row'));
+  
+  rows.sort((a, b) => {
+    const aVal = a.dataset[column];
+    const bVal = b.dataset[column];
+    
+    // Numeric sorting for age
+    if (column === 'age') {
+      return currentSort.ascending ? aVal - bVal : bVal - aVal;
+    }
+    
+    // Alphabetic/string sorting
+    return currentSort.ascending 
+      ? aVal.localeCompare(bVal) 
+      : bVal.localeCompare(aVal);
+  });
+  
+  const container = document.querySelector('.animal-container');
+  rows.forEach(row => container.appendChild(row));
+  
+  // Toggle sort direction
+  if (currentSort.column === column) {
+    currentSort.ascending = !currentSort.ascending;
+  } else {
+    currentSort.column = column;
+    currentSort.ascending = true;
+  }
+  
+  updateSortArrows(column);
+}
+
+function updateSortArrows(column) {
+  document.querySelectorAll('[data-sort]').forEach(header => {
+    const col = header.dataset.sort;
+    const arrowSpan = header.querySelector('.sort-arrow');
+    
+    if (col === column) {
+      arrowSpan.textContent = currentSort.ascending ? ' ▲' : ' ▼';
+      arrowSpan.style.color = 'black';
+    } else {
+      arrowSpan.textContent = ' ▼';
+      arrowSpan.style.color = '#ccc';
+    }
+  });
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('[data-sort] .sort-arrow').forEach(arrow => {
+    arrow.textContent = ' ▼';
+    arrow.style.color = '#ccc';
+  });
+});
